@@ -1,14 +1,16 @@
+@use "../abstracts/variables";
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   // font-size: 16px;
   line-height: 1.7;
-  color: $color-gray-dark;
+  color: variables.$color-gray-dark;
   padding: 3rem;
 }
 
 .heading-primary {
-  color: $color-white;
+  color: variables.$color-white;
   text-transform: uppercase;
   margin-bottom: 6rem;
   /* below code line resolves the little shaking to top in ending of animetion. */
