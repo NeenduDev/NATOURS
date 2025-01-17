@@ -1,15 +1,9 @@
-@use "abstracts/functions";
-@use "abstracts/mixins";
-@use "abstracts/variables";
+@use "abstracts";
 
-@use "base/animations";
-@use "base/base";
-@use "base/typography";
-@use "base/utilities";
+@use "base";
 
-@use "components/button";
+@use "components";
 
-@use "layout/gird";
-@use "layout/header";
+@use "layout";
 
-@use "pages/home";
+@use "pages";
