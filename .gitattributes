@@ -1,0 +1,37 @@
+# Ensure consistent line endings across different platforms
+
+# Automatically normalize line endings to LF for text files.
+# This is the most common practice in modern repositories.
+* text=auto
+
+# Explicitly tell Git to treat specific files as binary files and not alter their line endings
+*.jpg binary
+*.png binary
+*.gif binary
+*.exe binary
+*.pdf binary
+
+# Handle line endings for shell scripts and text files
+*.sh text eol=lf
+*.txt text eol=lf
+
+# Ensure that Markdown files use LF for line endings
+*.md text eol=lf
+
+# Handle files that might be used in a Windows environment but should have LF line endings
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+
+# Handle configuration files that should retain their line endings
+*.gitignore text eol=lf
+*.editorconfig text eol=lf
+
+# Preserve CRLF for specific files (e.g., Windows batch scripts)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# End of line handling for Python files
+*.py text eol=lf
+
